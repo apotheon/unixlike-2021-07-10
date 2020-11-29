@@ -2,7 +2,7 @@
 
 ## NAME
 
-Unix: It's user friendly.  It's just picky about its friends.
+Unix - It's user friendly.  It's just picky about its friends.
 
 ## #!/bin/sh
 
