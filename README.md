@@ -1,6 +1,8 @@
 # Unix Like Us
 
-Unix is user friendly.  It's just picky about its friends.
+## NAME
+
+Unix: It's user friendly.  It's just picky about its friends.
 
 ## #!/bin/sh
 
