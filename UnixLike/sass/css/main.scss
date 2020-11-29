@@ -1,0 +1,41 @@
+body {
+  background: #181818;
+  color: #118822;
+  font-size: 2em;
+  letter-spacing: 0.1em;
+}
+
+ul.menu {
+  li {
+    list-style-type: none;
+    width: 8em;
+
+    a {
+      display: block;
+      border: medium solid #118822;
+      padding: 0.3em;
+      background: #118822;
+      color: #181818;
+      text-align: center;
+      text-decoration: none;
+      font-family: monospace;
+      font-variant: small-caps;
+      font-weight: bold;
+      letter-spacing: 0.3em;
+    }
+
+    a:hover {
+      border-color: #11cc22;
+      background: #181818;
+      color: #11cc22;
+    }
+  }
+}
+
+div.footer {
+  font-size: 0.5em;
+
+  div {
+    display: inline;
+  }
+}
