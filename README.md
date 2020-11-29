@@ -4,6 +4,8 @@
 
 Unix - It's user friendly.  It's just picky about its friends.
 
-## #!/bin/sh
+## SYNOPSIS
 
-Remember: Where there's a shell, there's a way.
+    #!/bin/sh
+
+    echo 'Where there's a shell, there's a way.'
