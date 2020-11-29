@@ -9,3 +9,13 @@ Unix - It's user friendly.  It's just picky about its friends.
     #!/bin/sh
 
     echo 'Where there's a shell, there's a way.'
+
+## DESCRIPTION
+
+* Us
+
+* Unix-Like
+
+* Unix
+
+* BSD Unix
