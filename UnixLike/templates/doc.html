@@ -17,7 +17,7 @@
   <div class="column">
     <ul class="link">
       {% for page in section.pages %}
-      <li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
+      <li><a href="{{ page.permalink | safe }}">{{ page.date }}: {{ page.title }}</a></li>
       {% endfor %}
     </ul>
   </div>
