@@ -1,6 +1,5 @@
 body {
   margin: 0em;
-  margin-right: 2em;
   padding: 0em;
   background: #181818;
   color: #11aa22;
@@ -79,9 +78,8 @@ ul.link {
 }
 
 ul.nav {
-  margin-right: 2em;
+  margin-bottom: 1em;
   border: thin solid #11cc22;
-  border-left: none;
   background: #222222;
   padding: 1em;
 
@@ -114,14 +112,30 @@ blockquote {
   }
 }
 
-@media screen and (max-width: 600px) {
+pre {
+  border: thin solid green;
+  overflow-x: auto;
+  background: #222222;
+  padding: 1em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  color: #11ee22;
+  font-size: 0.5em;
+}
+
+div.content {
+  margin: 0em;
+  padding: 2em;
+  padding-top: 0em;
+}
+
+@media screen and (max-width: 800px) {
   .column {
     width: 100%;
   }
 
-  .content {
-    margin: 0em;
-    padding: 0em;
-    padding-left: 1em;
+  .nav {
+    margin-left: 2em;
+    border: thin solid #11cc22;
   }
 }
