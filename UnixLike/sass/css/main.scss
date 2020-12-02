@@ -1,41 +1,127 @@
 body {
+  margin: 0em;
+  margin-right: 2em;
+  padding: 0em;
   background: #181818;
-  color: #118822;
+  color: #11aa22;
+  font-family: monospace;
   font-size: 2em;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.04em;
 }
 
-ul.menu {
+div.header {
+  margin: 0em;
+  margin-left: 4em;
+  margin-right: 4em;
+  padding: 0em;
+}
+
+h1.title {
+  margin-top: 1em;
+  color: #004400;
+  text-shadow: 0px 0px 16px #44ff88;
+  font-size: 2.2em;
+  font-variant: small-caps;
+  letter-spacing: 0.4em;
+}
+
+a {
+  margin: 0em;
+  border-bottom: thin solid #11aa22;
+  padding: 0.2em;
+  color: #11aa22;
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: thin solid #181818;
+  color: #11cc22;
+}
+
+div.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0em;
+  margin-top: 2em;
+  padding: 0em;
+}
+
+div.column {
+  flex: 50%;
+  margin: 0em;
+  padding: 0em;
+}
+
+ul.link {
+  margin: 0em;
+
   li {
+    margin: 0em;
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
     list-style-type: none;
-    width: 8em;
+  }
 
-    a {
-      display: block;
-      border: medium solid #118822;
-      padding: 0.3em;
-      background: #118822;
-      color: #181818;
-      text-align: center;
-      text-decoration: none;
-      font-family: monospace;
-      font-variant: small-caps;
-      font-weight: bold;
-      letter-spacing: 0.3em;
-    }
+  a {
+    display: block;
+    margin: 0em;
+    border: none;
+    border-bottom: thin solid #181818;
+    padding: 0.3em;
+    color: #11cc22;
+    letter-spacing: 0.2em;
+    font-size: 0.8em;
+  }
 
-    a:hover {
-      border-color: #11cc22;
-      background: #181818;
-      color: #11cc22;
-    }
+  a:hover {
+    border-bottom: thin solid #11ee22;
+  }
+}
+
+ul.nav {
+  margin-right: 2em;
+  border: thin solid #11cc22;
+  border-left: none;
+  background: #222222;
+  padding: 1em;
+
+  a {
+    border-bottom: thin solid #222222;
   }
 }
 
 div.footer {
+  margin: 0em;
+  margin-top: 4em;
+  padding: 1em;
   font-size: 0.5em;
 
   div {
-    display: inline;
+    display: inline-block;
+    margin: 0em;
+    padding: 1em;
+  }
+}
+
+blockquote {
+  margin-bottom: 2em;
+  border: thin solid #118822;
+  padding: 1em;
+  padding-left: 2em;
+
+  li {
+    padding: 0.5em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+
+  .content {
+    margin: 0em;
+    padding: 0em;
+    padding-left: 1em;
   }
 }
