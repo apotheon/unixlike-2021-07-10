@@ -1,6 +1,6 @@
 +++
-title = 'Articles'
+title = 'Documents'
 sort_by = 'date'
-template = 'articles.html'
+template = 'doc.html'
 page_template = 'article.html'
 +++
