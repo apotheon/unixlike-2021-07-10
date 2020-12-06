@@ -28,13 +28,17 @@ a {
   margin: 0em;
   border-bottom: thin solid #11aa22;
   padding: 0.2em;
-  color: #11aa22;
+  color: #aaee22;
   text-decoration: none;
 }
 
 a:hover {
   border-bottom: thin solid #181818;
   color: #11cc22;
+}
+
+li {
+  margin-bottom: 1em;
 }
 
 div.row {
@@ -79,12 +83,30 @@ ul.link {
 
 ul.nav {
   margin-bottom: 1em;
-  border: thin solid #11cc22;
-  background: #222222;
-  padding: 1em;
+  border: none;
+  padding: 0em;
+
+  li {
+    display: inline-block;
+    margin: 0em;
+    margin-bottom: 0.4em;
+    width: 5em;
+    padding: 0em;
+    font-weight: bold;
+  }
 
   a {
-    border-bottom: thin solid #222222;
+    background: #114422;
+    border-bottom: none;
+    color: #11cc22;
+    padding: 1em;
+    font-size: 0.6em;
+  }
+
+  a:hover {
+    background: #118822;
+    border-bottom: none;
+    color: #222222;
   }
 }
 

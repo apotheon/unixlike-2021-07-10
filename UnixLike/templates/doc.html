@@ -1,25 +1,16 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="header">
-  <h1 class="title">{{ section.title }}</h1>
-</div>
+{% include 'sectionheader.html' %}
+  <div class="content">
+    <p class="subtitle">Where there's a shell, there's a way.</p>
 
-<div class="row">
-  <div class="column">
-    <ul class="link nav">
-      <li><a href="/">/</a></li>
-      <li><a href="/about">/about</a></li>
-      <li><a href="/doc">/doc</a></li>
-    </ul>
-  </div>
-
-  <div class="column">
     <ul class="link">
       {% for page in section.pages %}
       <li><a href="{{ page.permalink | safe }}">{{ page.date }}: {{ page.title }}</a></li>
       {% endfor %}
     </ul>
+        
+    {{ section.content | safe }}
   </div>
-</div>
 {% endblock content %}

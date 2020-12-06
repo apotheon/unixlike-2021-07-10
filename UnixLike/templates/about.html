@@ -1,45 +1,16 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
 
 {% block content %}
-<div class="header">
-  <h1 class="title">About Unix Like Us</h1>
+{% include 'sectionheader.html' %}
+  <div class="content">
+    <p class="subtitle">Unix is very user friendly.  It's just picky about its friends.</p>
 
-  <p>Unix is very user friendly.  It's just picky about its friends.</p>
-</div>
-
-<div class="row">
-  <div class="column">
-    <ul class="link nav">
-      <li><a href="/">/</a></li>
-      <li><a href="/about">/about</a></li>
-      <li><a href="/doc">/doc</a></li>
+    <ul class="link">
+      {% for page in section.pages %}
+      <li><a href="{{ page.permalink | safe }}">{{ page.date }}: {{ page.title }}</a></li>
+      {% endfor %}
     </ul>
+        
+    {{ section.content | safe }}
   </div>
-
-  <div class="column">
-    <div class="content">
-      <p>Once upon a time, someone else registered the unixlike.us domain.  Eventually, that person let it lapse.</p>
-
-      <p>The prior domain maintainer's content can be found on the Wayback Machine, archived from 2013:</p>
-
-      <div class="centerblock">
-        <a href="https://web.archive.org/web/20130818060432/http://unixlike.us/">unix-like@us</a>
-      </div>
-
-      <p>If you're looking for kindred spirits, try the IRC channel:</p>
-
-      <div class="centerblock">
-        <p>freenode/#anomalous</p>
-        <p>freenode/##copyfree</p>
-      </div>
-
-      <p>If you don't already have a local IRC client, try a web client:</p>
-
-      <div class="centerblock">
-        <p><a href="https://webchat.freenode.net/#anomalous">#anomalous webchat</a></p>
-        <p><a href="https://webchat.freenode.net/##copyfree">##copyfree webchat</a></p>
-      </div>
-    </div>
-  </div>
-</div>
 {% endblock content %}

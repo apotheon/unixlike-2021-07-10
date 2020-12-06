@@ -1,45 +1,9 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="header">
-  <h1 class="title">Unix Like Us</h1>
+{% include 'sectionheader.html' %}
 
-  <p>Are you using Unix like us?</p>
-</div>
-
-<div class="row">
-  <div class="column">
-    <ul class="link nav">
-      <li><a href="/">/</a></li>
-      <li><a href="/about">/about</a></li>
-      <li><a href="/doc">/doc</a></li>
-    </ul>
+  <div class="content">
+    {{ section.content | safe }}
   </div>
-
-  <div class="column">
-    <div class="content">
-      <p>You've stumbled into a celebration of the Unix philosophy.  You may ask "What is the Unix philosophy?"</p>
-
-      <p>According to Doug McIlroy:</p>
-
-      <blockquote>Do One Thing And Do It Well</blockquote>
-
-      <p>According to Mike Gancarz:</p>
-
-      <blockquote>
-        <ol>
-          <li>Small is beautiful.</li>
-          <li>Make each program do one thing well.</li>
-          <li>Build a prototype as soon as possible.</li>
-          <li>Choose portability over efficiency.</li>
-          <li>Store data in flat text files.</li>
-          <li>Use software leverage to your advantage.</li>
-          <li>Use shell scripts to increase leverage and portability.</li>
-          <li>Avoid captive user interfaces.</li>
-          <li>Make every program a filter.</li>
-        </ol>
-      </blockquote>
-    </div>
-  </div>
-</div>
 {% endblock content %}

@@ -1,24 +1,10 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="header">
-  <h1 class="title">{{ page.title }}</h1>
-  <p class="subtitle"><strong>{{ page.date }}</strong></p>
-</div>
+{% include 'pageheader.html' %}
+      <div class="content">
+        {{ page.content | safe }}
 
-<div class="row">
-  <div class="column">
-    <ul class="link nav">
-      <li><a href="/">/</a></li>
-      <li><a href="/about">/about</a></li>
-      <li><a href="/doc">/doc</a></li>
-    </ul>
-  </div>
-
-  <div class="column">
-    <div class="content">
-      {{ page.content | safe }}
-    </div>
-  </div>
-</div>
+        <p class="subtitle"><strong>{{ page.date }}</strong></p>
+      </div>
 {% endblock content %}
